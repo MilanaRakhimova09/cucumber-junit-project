@@ -21,9 +21,4 @@ public class EatingCucumber {
         System.out.println("It is from Then");
 
     }
-
-
-
-
-
 }

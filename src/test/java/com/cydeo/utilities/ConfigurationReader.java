@@ -14,14 +14,14 @@ public class ConfigurationReader {
       // We need properties class to use methods coming from class like load(), getProperty("key")
       //It is private because I WILL BE USING ONLY IN THIS CLASS
 
-       private static Properties properties = new Properties();
+       public static Properties properties = new Properties();
         // we want to open the properties file and load to properties object ONLY ONCE BEFORE READING
         //having static block because static runs first
         static{
         try {
             // 2- Create the object of FileInputStream
             // We need this object to open file as a stream in Java memory
-            FileInputStream file = new FileInputStream("configuration.properties");
+            FileInputStream file = new FileInputStream("config.properties");
 
 
             // 3 - Load the properties object using FileInputStream object
